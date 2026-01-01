@@ -76,8 +76,27 @@ img {
   50% { opacity: 0; }
 }
 
+/* Tablet breakpoint */
 @media (max-width: 768px) {
   :root {
     --base-font-size: 16px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+  :root {
+    --base-font-size: 14px;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 360px) {
+  :root {
+    --base-font-size: 13px;
   }
 }

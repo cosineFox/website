@@ -177,5 +177,39 @@
 	.footer { padding: 20px; text-align: center; font-size: 16px; color: #fff; }
 	.blink { animation: blink 1s step-end infinite; }
 	@keyframes blink { 50% { opacity: 0; } }
-	@media (max-width: 700px) { .gallery { grid-template-columns: 1fr; } .title { font-size: 32px; } .subtitle { font-size: 16px; } .nav-link { font-size: 16px; } .booking-row { flex-direction: column; gap: 10px; } }
+	/* Tablet */
+	@media (max-width: 768px) {
+		.title { font-size: 32px; }
+		.subtitle { font-size: 16px; }
+		.nav-link { font-size: 16px; padding: 15px; }
+		.booking-row { flex-direction: column; gap: 10px; }
+	}
+
+	/* Mobile */
+	@media (max-width: 600px) {
+		.page { padding: 10px 0; }
+		.main-container { border-width: 1px; }
+		.header { padding: 20px 15px; }
+		.title { font-size: 24px; letter-spacing: 2px; }
+		.subtitle { font-size: 14px; margin-top: 8px; }
+		.nav-link { padding: 12px 8px; font-size: 14px; }
+		.booking-notice { padding: 15px; }
+		.booking-row { font-size: 14px; }
+		.social-row { font-size: 14px; }
+		.gallery { grid-template-columns: 1fr; }
+		.photo-item { aspect-ratio: 4/5; }
+		.overlay { padding: 15px; font-size: 12px; flex-direction: column; gap: 5px; align-items: flex-start; }
+		.loader, .empty { height: 250px; font-size: 14px; letter-spacing: 2px; }
+		.footer { padding: 15px; font-size: 14px; }
+	}
+
+	/* Small mobile */
+	@media (max-width: 400px) {
+		.title { font-size: 20px; letter-spacing: 1px; }
+		.nav-link { padding: 10px 5px; font-size: 12px; }
+		.booking-notice { padding: 12px; }
+		.booking-row { font-size: 12px; }
+		.social-row { font-size: 12px; }
+		.highlight-link { padding: 2px 6px; font-size: 12px; }
+	}
 </style>

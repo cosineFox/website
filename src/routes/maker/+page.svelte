@@ -153,5 +153,42 @@
 	.footer a:hover { background: #fff; color: #000; }
 	.blink { animation: blink 1s step-end infinite; }
 	@keyframes blink { 50% { opacity: 0; } }
-	@media (max-width: 700px) { .title { font-size: 32px; } .nav-link { font-size: 16px; } }
+	/* Tablet */
+	@media (max-width: 768px) {
+		.title { font-size: 32px; }
+		.nav-link { font-size: 16px; padding: 15px; }
+		.project-details { gap: 10px; }
+		.project-link strong, .project-title-static { font-size: 20px; }
+	}
+
+	/* Mobile */
+	@media (max-width: 600px) {
+		.page { padding: 10px 0; }
+		.main-container { border-width: 1px; }
+		.header { padding: 20px 15px; }
+		.title { font-size: 24px; letter-spacing: 2px; }
+		.subtitle { font-size: 14px; margin-top: 8px; }
+		.nav-link { padding: 12px 8px; font-size: 14px; }
+		.section-header { padding: 10px 12px; font-size: 14px; }
+		.section-body { padding: 15px; }
+		.breadcrumb { font-size: 12px; }
+		.project-details { flex-direction: column; align-items: flex-start; gap: 5px; }
+		.project-link strong, .project-title-static { font-size: 18px; }
+		.desc { font-size: 14px; }
+		.status { margin-left: 0; font-size: 14px; }
+		.separator { display: none; }
+		.repo-list li { flex-direction: column; align-items: flex-start; gap: 5px; }
+		.repo-desc { white-space: normal; font-size: 14px; }
+		.repo-date { font-size: 12px; }
+		.github-link-footer { font-size: 14px; }
+		.footer { padding: 15px; font-size: 14px; }
+	}
+
+	/* Small mobile */
+	@media (max-width: 400px) {
+		.title { font-size: 20px; letter-spacing: 1px; }
+		.nav-link { padding: 10px 5px; font-size: 12px; }
+		.project-link strong, .project-title-static { font-size: 16px; }
+		.desc { font-size: 12px; }
+	}
 </style>

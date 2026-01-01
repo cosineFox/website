@@ -151,5 +151,37 @@
 	.return-link { color: #fff; text-decoration: underline; font-weight: bold; }
 	.blink { animation: blink 1s step-end infinite; }
 	@keyframes blink { 50% { opacity: 0; } }
-	@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } .title { font-size: 32px; } .nav-link { font-size: 16px; } }
+	/* Tablet */
+	@media (max-width: 768px) {
+		.grid { grid-template-columns: 1fr; }
+		.title { font-size: 32px; }
+		.nav-link { font-size: 16px; padding: 15px; }
+	}
+
+	/* Mobile */
+	@media (max-width: 600px) {
+		.page { padding: 10px 0; }
+		.main-container { border-width: 1px; }
+		.header { padding: 20px 15px; }
+		.title { font-size: 24px; letter-spacing: 2px; }
+		.subtitle { font-size: 14px; margin-top: 8px; }
+		.nav-link { padding: 12px 8px; font-size: 14px; }
+		.breadcrumb-bar { padding: 10px 15px; font-size: 14px; }
+		.alert-box { font-size: 14px; }
+		.section-header { padding: 10px 12px; font-size: 14px; }
+		.section-body { padding: 15px; }
+		td { padding: 8px 0; font-size: 14px; }
+		td:first-child { width: 50%; }
+		.quake-list li { font-size: 14px; margin-bottom: 8px; }
+		.hint { font-size: 14px; }
+		.footer { padding: 15px; font-size: 14px; }
+	}
+
+	/* Small mobile */
+	@media (max-width: 400px) {
+		.title { font-size: 20px; letter-spacing: 1px; }
+		.nav-link { padding: 10px 5px; font-size: 12px; }
+		td { font-size: 12px; }
+		.quake-list li { font-size: 12px; }
+	}
 </style>
