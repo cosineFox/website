@@ -19,7 +19,7 @@
 	const projects = [
 		{ slug: 'audio-esp-dac', title: 'Audio ESP DAC', description: 'ESP32-based digital-to-analog converter.', status: 'Planned' },
 		{ slug: 'computer-museum', title: 'Computer Museum', description: 'Documentation of vintage computing hardware.', status: 'Planned' },
-		{ slug: 'yuuna-chan-bot', title: 'Yuuna-chan Bot', description: 'Discord utility bot.', status: 'Planned' },
+		{ slug: 'yuuna-chan-bot', title: 'Yuuna-chan Bot', description: 'Telegram/Bsky scraper, utility & journaling bot.', status: 'Planned' },
 		{ slug: 'canvas-labworks', title: 'Canvas Labworks', description: 'This website system.', status: 'Live' },
 		{ slug: 'dashboard', title: 'Weather Dashboard', description: 'Meteorological data visualization.', status: 'Live', link: '/maker/dashboard' }
 	];
