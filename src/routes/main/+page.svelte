@@ -187,9 +187,9 @@
 					</div>
 					<div class="about-right">
 						<p class="greeting">
-							Hello&nbsp;<img src={www} alt="www" class="badge inline-badge" /> !
+							<span class="greeting-hello">Hello&nbsp;<img src={www} alt="www" class="badge inline-badge" />&nbsp;!</span>
 							<span class="greeting-badges">
-							I 	&lt;3
+								I&nbsp;&lt;3
 								<img src={linux} alt="linux" class="badge" />
 								<img src={nc_tribune} alt="nc_tribune" class="badge" />
 								<img src={blink0} alt="blink" class="badge" />
@@ -224,7 +224,7 @@
 				<div class="section-header">VISITORS</div>
 				<div class="section-body center">
 					<div class="counter">
-						{#each (globalState.visitorCount || 1337).toString().padStart(6, '0').split('') as digit}
+						{#each (globalState.visitorCount || 0).toString().padStart(6, '0').split('') as digit}
 							<img src={digitImages[parseInt(digit)]} alt={digit} class="counter-digit" />
 						{/each}
 					</div>
@@ -350,6 +350,7 @@
 	.avatar-img { width: 180px; height: 180px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
 	.filename { font-size: 16px; color: #fff; display: block; margin-top: 5px; }
 	.greeting { font-size: 28px; font-weight: bold; margin: 0; display: flex; align-items: center; flex-wrap: wrap; }
+	.greeting-hello { display: flex; align-items: center; gap: 5px; }
 	.greeting-badges { margin-left: 20px; display: flex; align-items: center; gap: 10px; }
 	.info-list { margin: 10px 0 0 0; font-size: 18px; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 10px 0; display: flex; flex-wrap: wrap; gap: 20px; }
 	.info-list a:hover { color: #000; background: #fff; }
@@ -428,8 +429,8 @@
 		.status-header { font-size: 12px; gap: 5px; flex-wrap: wrap; }
 		.status-content { font-size: 14px; word-break: break-word; }
 		.badge { transform: scale(1); margin: 3px; }
-		.counter { gap: 2px; }
-		.counter-digit { height: 40px; }
+		.counter { gap: 3px; }
+		.counter-digit { height: 50px; }
 		.social-links a { padding: 12px 8px; font-size: 14px; }
 		.post-meta { font-size: 12px; }
 		.post p { font-size: 14px; word-break: break-word; }
@@ -456,7 +457,7 @@
 		.greeting { font-size: 16px; flex-direction: column; gap: 8px; }
 		.greeting-badges { margin-left: 0; flex-wrap: wrap; justify-content: center; }
 		.badge { transform: scale(0.9); margin: 2px; }
-		.counter-digit { height: 32px; }
+		.counter-digit { height: 40px; }
 		.social-links { flex-direction: column; }
 		.social-links a { border-right: none; border-bottom: 1px solid #fff; padding: 10px; }
 		.social-links a:last-child { border-bottom: none; }

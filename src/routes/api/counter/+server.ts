@@ -11,12 +11,12 @@ function getCount(): number {
 	try {
 		if (existsSync(COUNTER_FILE)) {
 			const data = readFileSync(COUNTER_FILE, 'utf-8');
-			return parseInt(data, 10) || 1337;
+			return parseInt(data, 10) || 0;
 		}
 	} catch {
 		// Ignore errors
 	}
-	return 1337;
+	return 0;
 }
 
 function incrementCount(): number {
