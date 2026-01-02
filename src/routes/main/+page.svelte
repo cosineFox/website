@@ -349,9 +349,9 @@
 	.about-left { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 	.avatar-img { width: 180px; height: 180px; border: 2px solid #fff; border-radius: 50%; object-fit: cover; }
 	.filename { font-size: 16px; color: #fff; display: block; margin-top: 5px; }
-	.greeting { font-size: 28px; font-weight: bold; margin: 0; display: flex; align-items: center; flex-wrap: wrap; }
+	.greeting { font-size: 28px; font-weight: bold; margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
 	.greeting-hello { display: flex; align-items: center; gap: 5px; }
-	.greeting-badges { margin-left: 20px; display: flex; align-items: center; gap: 10px; }
+	.greeting-badges { display: inline-flex; align-items: center; gap: 10px; }
 	.info-list { margin: 10px 0 0 0; font-size: 18px; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 10px 0; display: flex; flex-wrap: wrap; gap: 20px; }
 	.info-list a:hover { color: #000; background: #fff; }
 	.online { color: #0f0; }
@@ -421,9 +421,9 @@
 		.section-body { padding: 15px; overflow-x: hidden; }
 		.avatar-img { width: 120px; height: 120px; }
 		.filename { font-size: 12px; }
-		.greeting { font-size: 20px; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+		.greeting { font-size: 20px; flex-direction: row; justify-content: center; align-items: center; text-align: center; width: 100%; gap: 10px; }
 		.greeting-hello { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px; }
-		.greeting-badges { margin-left: 0; gap: 5px; margin-top: 8px; display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; }
+		.greeting-badges { margin-left: 0; gap: 5px; display: flex; flex-direction: row; justify-content: center; align-items: center; }
 		.info-list { font-size: 14px; gap: 10px; padding: 8px 0; }
 		.about-text p { font-size: 14px; }
 		.status-box { padding: 10px; }
@@ -455,7 +455,7 @@
 		.subtitle { font-size: 12px; }
 		.nav-link { padding: 10px 5px; font-size: 11px; }
 		.avatar-img { width: 80px; height: 80px; }
-		.greeting { font-size: 16px; flex-direction: column; gap: 8px; }
+		.greeting { font-size: 16px; flex-direction: row; justify-content: center; }
 		.greeting-badges { margin-left: 0; flex-wrap: wrap; justify-content: center; }
 		.badge { transform: scale(0.9); margin: 2px; }
 		.counter-digit { height: 40px; }
