@@ -397,8 +397,8 @@
 	.lb-counter { position: absolute; bottom: 20px; color: #888; font-size: 14px; }
 	/* Tablet */
 	@media (max-width: 960px) {
-		.content { display: flex; flex-direction: column; }
-		.section { width: 100%; }
+		.content { display: flex !important; flex-direction: column !important; }
+		.section { width: 100% !important; }
 		.about-section, .counter-box, .links-section, .footer { grid-column: unset; }
 		.feed-section { grid-row: unset; }
 		.about { grid-template-columns: 1fr; text-align: center; gap: 15px; }
