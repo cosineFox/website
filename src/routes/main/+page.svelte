@@ -420,7 +420,7 @@
 		.section-body { padding: 15px; overflow-x: hidden; }
 		.avatar-img { width: 120px; height: 120px; }
 		.filename { font-size: 12px; }
-		.greeting { font-size: 20px; justify-content: center; flex-direction: column; }
+		.greeting { font-size: 20px; flex-direction: column; align-items: center; }
 		.greeting-badges { margin-left: 0; gap: 5px; margin-top: 8px; justify-content: center; }
 		.info-list { font-size: 14px; gap: 10px; padding: 8px 0; }
 		.about-text p { font-size: 14px; }
