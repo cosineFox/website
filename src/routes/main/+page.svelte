@@ -402,7 +402,9 @@
 		.about-section, .counter-box, .links-section, .footer { grid-column: unset; }
 		.feed-section { grid-row: unset; }
 		.about { grid-template-columns: 1fr; text-align: center; gap: 15px; }
+		.about-right { display: flex; flex-direction: column; align-items: center; }
 		.info-list { justify-content: center; }
+		.status-box { text-align: left; width: 100%; max-width: 400px; }
 	}
 
 	/* Mobile */
@@ -418,8 +420,8 @@
 		.section-body { padding: 15px; overflow-x: hidden; }
 		.avatar-img { width: 120px; height: 120px; }
 		.filename { font-size: 12px; }
-		.greeting { font-size: 20px; justify-content: center; }
-		.greeting-badges { margin-left: 10px; gap: 5px; }
+		.greeting { font-size: 20px; justify-content: center; flex-direction: column; }
+		.greeting-badges { margin-left: 0; gap: 5px; margin-top: 8px; justify-content: center; }
 		.info-list { font-size: 14px; gap: 10px; padding: 8px 0; }
 		.about-text p { font-size: 14px; }
 		.status-box { padding: 10px; }
