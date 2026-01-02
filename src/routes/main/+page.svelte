@@ -398,7 +398,7 @@
 	/* Tablet */
 	@media (max-width: 960px) {
 		.content { display: flex !important; flex-direction: column !important; }
-		.section { width: 100% !important; }
+		.section { width: 100% !important; margin-left: 0; border-left: none; border-right: none; }
 		.about-section, .counter-box, .links-section, .footer { grid-column: unset; }
 		.feed-section { grid-row: unset; }
 		.about { grid-template-columns: 1fr; text-align: center; gap: 15px; }
@@ -421,7 +421,7 @@
 		.avatar-img { width: 120px; height: 120px; }
 		.filename { font-size: 12px; }
 		.greeting { font-size: 20px; flex-direction: column; align-items: center; }
-		.greeting-badges { margin-left: 0; gap: 5px; margin-top: 8px; justify-content: center; }
+		.greeting-badges { margin-left: 0; gap: 5px; margin-top: 8px; display: flex; justify-content: center; align-items: center; width: 100%; }
 		.info-list { font-size: 14px; gap: 10px; padding: 8px 0; }
 		.about-text p { font-size: 14px; }
 		.status-box { padding: 10px; }
