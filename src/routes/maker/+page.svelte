@@ -164,31 +164,36 @@
 	/* Mobile */
 	@media (max-width: 600px) {
 		.page { padding: 10px 0; }
-		.main-container { border-width: 1px; }
+		.main-container { border-width: 1px; overflow-x: hidden; }
 		.header { padding: 20px 15px; }
-		.title { font-size: 24px; letter-spacing: 2px; }
-		.subtitle { font-size: 14px; margin-top: 8px; }
+		.title { font-size: 22px; letter-spacing: 2px; word-break: break-word; }
+		.subtitle { font-size: 13px; margin-top: 8px; }
 		.nav-link { padding: 12px 8px; font-size: 14px; }
 		.section-header { padding: 10px 12px; font-size: 14px; }
-		.section-body { padding: 15px; }
+		.section-body { padding: 15px; overflow-x: hidden; }
 		.breadcrumb { font-size: 12px; }
+		.project-list li { padding-bottom: 12px; margin-bottom: 12px; }
 		.project-details { flex-direction: column; align-items: flex-start; gap: 5px; }
-		.project-link strong, .project-title-static { font-size: 18px; }
-		.desc { font-size: 14px; }
-		.status { margin-left: 0; font-size: 14px; }
+		.project-link strong, .project-title-static { font-size: 16px; }
+		.desc { font-size: 13px; word-break: break-word; }
+		.status { margin-left: 0; font-size: 13px; }
 		.separator { display: none; }
-		.repo-list li { flex-direction: column; align-items: flex-start; gap: 5px; }
-		.repo-desc { white-space: normal; font-size: 14px; }
-		.repo-date { font-size: 12px; }
+		.repo-list li { flex-direction: column; align-items: flex-start; gap: 4px; padding: 8px 0; }
+		.repo-list li a { font-size: 14px; word-break: break-word; }
+		.repo-desc { white-space: normal; font-size: 12px; word-break: break-word; }
+		.repo-date { font-size: 11px; }
 		.github-link-footer { font-size: 14px; }
 		.footer { padding: 15px; font-size: 14px; }
 	}
 
 	/* Small mobile */
 	@media (max-width: 400px) {
-		.title { font-size: 20px; letter-spacing: 1px; }
-		.nav-link { padding: 10px 5px; font-size: 12px; }
-		.project-link strong, .project-title-static { font-size: 16px; }
+		.title { font-size: 18px; letter-spacing: 1px; }
+		.subtitle { font-size: 12px; }
+		.nav-link { padding: 10px 5px; font-size: 11px; }
+		.project-link strong, .project-title-static { font-size: 15px; }
 		.desc { font-size: 12px; }
+		.repo-list li a { font-size: 13px; }
+		.repo-desc { font-size: 11px; }
 	}
 </style>

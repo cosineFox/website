@@ -188,28 +188,31 @@
 	/* Mobile */
 	@media (max-width: 600px) {
 		.page { padding: 10px 0; }
-		.main-container { border-width: 1px; }
+		.main-container { border-width: 1px; overflow-x: hidden; }
 		.header { padding: 20px 15px; }
-		.title { font-size: 24px; letter-spacing: 2px; }
-		.subtitle { font-size: 14px; margin-top: 8px; }
+		.title { font-size: 22px; letter-spacing: 2px; word-break: break-word; }
+		.subtitle { font-size: 13px; margin-top: 8px; }
 		.nav-link { padding: 12px 8px; font-size: 14px; }
 		.booking-notice { padding: 15px; }
 		.booking-row { font-size: 14px; }
+		.booking-text { word-break: break-word; }
 		.social-row { font-size: 14px; }
 		.gallery { grid-template-columns: 1fr; }
 		.photo-item { aspect-ratio: 4/5; }
-		.overlay { padding: 15px; font-size: 12px; flex-direction: column; gap: 5px; align-items: flex-start; }
-		.loader, .empty { height: 250px; font-size: 14px; letter-spacing: 2px; }
+		.overlay { padding: 12px; font-size: 11px; flex-direction: column; gap: 4px; align-items: flex-start; }
+		.loader, .empty { height: 200px; font-size: 14px; letter-spacing: 2px; }
 		.footer { padding: 15px; font-size: 14px; }
 	}
 
 	/* Small mobile */
 	@media (max-width: 400px) {
-		.title { font-size: 20px; letter-spacing: 1px; }
-		.nav-link { padding: 10px 5px; font-size: 12px; }
-		.booking-notice { padding: 12px; }
+		.title { font-size: 18px; letter-spacing: 1px; }
+		.subtitle { font-size: 12px; }
+		.nav-link { padding: 10px 5px; font-size: 11px; }
+		.booking-notice { padding: 10px; }
 		.booking-row { font-size: 12px; }
 		.social-row { font-size: 12px; }
-		.highlight-link { padding: 2px 6px; font-size: 12px; }
+		.highlight-link { padding: 2px 6px; font-size: 11px; }
+		.overlay { padding: 10px; font-size: 10px; }
 	}
 </style>

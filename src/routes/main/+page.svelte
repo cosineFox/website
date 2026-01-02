@@ -397,9 +397,10 @@
 	.lb-counter { position: absolute; bottom: 20px; color: #888; font-size: 14px; }
 	/* Tablet */
 	@media (max-width: 960px) {
-		.content { grid-template-columns: 1fr; }
-		.about-section, .counter-box, .links-section { grid-column: auto; }
-		.feed-section { grid-row: auto; }
+		.content { display: flex; flex-direction: column; }
+		.section { width: 100%; }
+		.about-section, .counter-box, .links-section, .footer { grid-column: unset; }
+		.feed-section { grid-row: unset; }
 		.about { grid-template-columns: 1fr; text-align: center; gap: 15px; }
 		.info-list { justify-content: center; }
 	}
@@ -407,14 +408,14 @@
 	/* Mobile */
 	@media (max-width: 600px) {
 		.page { padding: 10px 0; }
-		.main-container { border-width: 1px; }
+		.main-container { border-width: 1px; overflow-x: hidden; }
 		.header { padding: 20px 15px; }
-		.title { font-size: 24px; letter-spacing: 2px; }
+		.title { font-size: 24px; letter-spacing: 2px; word-break: break-word; }
 		.subtitle { font-size: 14px; margin-top: 8px; }
 		.nav-link { padding: 12px 8px; font-size: 14px; }
 		.marquee-container { font-size: 14px; padding: 8px 0 0 0; }
 		.section-header { padding: 10px 12px; font-size: 14px; }
-		.section-body { padding: 15px; }
+		.section-body { padding: 15px; overflow-x: hidden; }
 		.avatar-img { width: 120px; height: 120px; }
 		.filename { font-size: 12px; }
 		.greeting { font-size: 20px; justify-content: center; }
@@ -422,19 +423,22 @@
 		.info-list { font-size: 14px; gap: 10px; padding: 8px 0; }
 		.about-text p { font-size: 14px; }
 		.status-box { padding: 10px; }
-		.status-header { font-size: 12px; gap: 5px; }
-		.status-content { font-size: 14px; }
-		.badge { scale: 1; margin: 3px; }
-		.counter-digit { height: 50px; }
+		.status-header { font-size: 12px; gap: 5px; flex-wrap: wrap; }
+		.status-content { font-size: 14px; word-break: break-word; }
+		.badge { transform: scale(1); margin: 3px; }
+		.counter { gap: 2px; }
+		.counter-digit { height: 40px; }
 		.social-links a { padding: 12px 8px; font-size: 14px; }
 		.post-meta { font-size: 12px; }
-		.post p { font-size: 14px; }
-		.post-images { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 5px; }
+		.post p { font-size: 14px; word-break: break-word; }
+		.post-images { grid-template-columns: repeat(2, 1fr); gap: 5px; }
 		.game-row { padding: 10px; gap: 10px; }
 		.game-icon { width: 36px; height: 36px; }
-		.game-name { font-size: 14px; }
-		.game-time { font-size: 14px; }
+		.game-name { font-size: 14px; overflow: hidden; text-overflow: ellipsis; }
+		.game-time { font-size: 14px; white-space: nowrap; }
+		.feed-content { max-height: 400px; }
 		.footer { padding: 20px 15px; font-size: 14px; }
+		.hint { font-size: 14px; }
 		.lb-nav { padding: 10px; font-size: 12px; }
 		.lb-prev { left: 10px; }
 		.lb-next { right: 10px; }
@@ -443,14 +447,17 @@
 
 	/* Small mobile */
 	@media (max-width: 400px) {
-		.title { font-size: 20px; letter-spacing: 1px; }
-		.nav-link { padding: 10px 5px; font-size: 12px; }
-		.avatar-img { width: 100px; height: 100px; }
-		.greeting { font-size: 18px; flex-direction: column; gap: 10px; }
-		.greeting-badges { margin-left: 0; }
-		.counter-digit { height: 40px; }
+		.title { font-size: 18px; letter-spacing: 1px; }
+		.subtitle { font-size: 12px; }
+		.nav-link { padding: 10px 5px; font-size: 11px; }
+		.avatar-img { width: 80px; height: 80px; }
+		.greeting { font-size: 16px; flex-direction: column; gap: 8px; }
+		.greeting-badges { margin-left: 0; flex-wrap: wrap; justify-content: center; }
+		.badge { transform: scale(0.9); margin: 2px; }
+		.counter-digit { height: 32px; }
 		.social-links { flex-direction: column; }
-		.social-links a { border-right: none; border-bottom: 1px solid #fff; }
+		.social-links a { border-right: none; border-bottom: 1px solid #fff; padding: 10px; }
 		.social-links a:last-child { border-bottom: none; }
+		.badges { gap: 2px; }
 	}
 </style>
