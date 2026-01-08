@@ -5,7 +5,7 @@
 	import { globalState, shouldFetch, updateFetchTime } from '$lib/state.svelte';
 
 	// Asset Imports
-	import aliceImg from '$lib/assets/images/badges/alice.WEBP';
+	import aliceImg from '$lib/assets/images/badges/pfp.WEBP';
 	import gamercat from '$lib/assets/images/badges/gamercat.gif';
 	import gethtmlnow from '$lib/assets/images/badges/gethtmlnow.gif';
 	import gc_japan from '$lib/assets/images/badges/gc_japan.gif';
