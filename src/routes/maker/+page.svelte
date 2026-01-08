@@ -114,7 +114,7 @@
 </div>
 
 <style>
-	.page { min-height: 100vh; background: #000; color: #fff; font-family: 'Courier New', monospace; font-size: 18px; display: flex; flex-direction: column; align-items: center; padding: 20px 0; }
+	.page { min-height: 100vh; background: #000; color: #fff; font-family: 'Courier New', monospace; font-size: 18px; display: flex; flex-direction: column; align-items: center; padding: 20px; }
 	.main-container { width: 100%; max-width: 1000px; background: #000; border: 2px solid #fff; }
 	.header { text-align: center; padding: 30px 20px; border-bottom: 2px solid #fff; }
 	.title { font-size: 42px; margin: 0; letter-spacing: 4px; line-height: 1; font-weight: bold; text-transform: uppercase; }
