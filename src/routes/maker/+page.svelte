@@ -157,8 +157,10 @@
 	@media (max-width: 768px) {
 		.title { font-size: 32px; }
 		.nav-link { font-size: 16px; padding: 15px; }
-		.project-details { gap: 10px; }
+		.project-details { flex-direction: column; align-items: flex-start; gap: 5px; }
 		.project-link strong, .project-title-static { font-size: 20px; }
+		.status { margin-left: 0; }
+		.separator { display: none; }
 	}
 
 	/* Mobile */
